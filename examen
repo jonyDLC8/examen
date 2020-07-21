@@ -1,0 +1,106 @@
+using System;
+using System linq;
+using System text
+
+
+namespace examen
+{
+    class Program
+    {
+        static string[,] Usuarios = new string[2,10];
+        static void Main(string[] args)
+        {
+            int a;
+            string b;
+            int c;
+
+
+            for (int x = 0; x < 10; x++)
+
+try
+                {
+                    a = int.Parse(Console.ReadLine());
+                }
+                catch
+                {
+                    Console.WriteLine("error, por favor, intente  de nuevo");
+                    a = int.Parse(Console.ReadLine());
+                }
+
+            {
+                Console.WriteLine("ingrese usuario");
+                ("\n");
+                Console.WriteLine("ingrese su nombre y apellido:");
+                Usuarios[0, x] = Console.ReadLine();
+                (" \n");
+                Console.WriteLine("ingrese su dirección ");
+                Usuarios[1, x] = Console.ReadLine();
+                (" \n");
+                Console.WriteLine("ingrese su numero telefono");
+                Usuarios[2, x] = Console.ReadLine();
+                Console.Clear();
+                Console.WriteLine("si desea salir escriba: salir ");
+                (" \n")
+                
+
+                if (a == salir)
+                {
+
+                    break;
+                }
+
+                Console.Clear();
+            }
+            Console.WriteLine("ver usuarios: 1 ");
+            (" \n")
+            Console.WriteLine("buscar usuarios : 2");
+            (" \n")
+            Console.WriteLine("salir: 3");
+            (" \n")
+            
+            c = int.Parse(Console.ReadLine());
+            if (c == 1)
+                for (int x = 0; x < 10; x++)
+                {
+                    Console.WriteLine(" Nombre, apellido: " + Usuarios[0, x] +  " Direccion: " + Usuarios[1, x] + " telefono: " + Usuarios[2, x] + "\n");
+                    
+                }
+
+            while (c != 3)
+            {
+                if (c == 2)
+                {
+                    for (int x = 0; x < 1; x++)
+                    {
+                       try
+                            {
+                                c = int.Parse(Console.ReadLine());
+                            }
+                            catch
+                            {
+                                Console.WriteLine("error, por favor                         intente de nuevo");
+                                c = int.Parse(Console.ReadLine());
+                            }
+
+                        Console.WriteLine("ingrese usuario");
+                        b = Console.ReadLine();
+                        if (b == Usuarios[0, x])
+                        {
+                            Console.WriteLine(" Nombre, apellido: " + Usuarios[0, x] +  " Direccion: " + Usuarios[1, x] + " telefono: " + Usuarios[2, x] + "\n");
+                            Console.WriteLine("ver usuarios: 1 ");
+                            (" \n")
+                            Console.WriteLine("buscar usuarios: 2");
+                            (" \n")
+                            Console.WriteLine("salir : 3");
+                            (" \n")
+                        }
+
+                }
+
+
+            }
+
+        }
+    }
+    }
+}
